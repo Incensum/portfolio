@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:jsf="http://xmlns.jcp.org/jsf">
+
+    <h:head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <h:outputStylesheet library="css" name="bootstrap.min.css"></h:outputStylesheet>
+    </h:head>
+
+    <h:body>
+        <div class="container">
+            <div class="navbar navbar-inverse">
+                <div class="navbar-brand">
+                    John A. Owen's Sign Up Example
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <h3 class="text-center">Sign Up</h3>
+                    <hr />
+                    <h:form>
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <h:inputText class="form-control input-sm" id="firstName" value="#{loginController.userModel.firstName}">
+                            <f:validateLength
+                                minimum="#{loginController.userModel.min}"
+                                maximum="#{loginController.userModel.max}"/>
+                            </h:inputText></div>
+                            <h:message showSummary="true" showDetail="false"
+                                style="color: red;
+                                 font-family: 'New Century Schoolbook', serif;
+                                 font-style: oblique"
+                                 id="errors1"
+                                 for="firstName"/>
+                        
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <h:inputText class="form-control input-sm" id="lastName" value="#{loginController.userModel.lastName}">
+                                <f:validateLength
+                                minimum="#{loginController.userModel.min}"
+                                maximum="#{loginController.userModel.max}"/>
+                            </h:inputText>
+                            </div>
+                            <h:message showSummary="true" showDetail="false"
+                                style="color: red;
+                                 font-family: 'New Century Schoolbook', serif;
+                                 font-style: oblique"
+                                 id="errors2"
+                                 for="lastName"/>
+                        
+                        <div class="form-group">
+                            <label for="userID">User ID</label>
+                            <h:inputText class="form-control input-sm" id="userID" value="#{loginController.loginInfoModel.userId}" required="true" requiredMessage="Must have User ID">
+                                <f:validator validatorId="userValidator"/>
+                                <f:attribute name="userID" value="#{loginController.loginInfoModel.userId}"/>
+                            </h:inputText>
+                            <h:message for="userID" style="color: red;" />
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <h:inputSecret class="form-control input-sm" id="password" value="#{loginController.loginInfoModel.password}" required ="true"
+                                           requiredMessage="Please Enter Password">
+                                <f:validator validatorId="passwordValidator" />
+                                <f:attribute name="confirmPassword" value="#{confirmPassword}"/>
+                            </h:inputSecret>
+                            <h:message for="password" style="color: red;" />
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmPassword">Confirm Password</label>
+                            <h:inputSecret class="form-control input-sm" id="confirmPassword" required="true" 
+                                           binding="#{confirmPassword}"
+                                           requiredMessage="Please enter confirm Password"/>
+                            <h:message for="confirmPassword" style="color: red;" />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <h:inputText class="form-control input-sm" id="email" value="#{loginController.userModel.email}" />
+                        </div>
+                        <div class="form-group">
+                            <label for="secQuestion">Security Question</label>
+                            <h:inputText class="form-control input-sm" id="secQuestion" value="#{loginController.userModel.secQuestion}"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="secAnswer">Security Answer</label>
+                            <h:inputText class="form-control input-sm" id="secAnswer" value="#{loginController.userModel.secAnswer}"/>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h:commandButton class="btn btn-default btn-block btn-sm btn-info" value="Submit" action="#{loginController.createUserLoginInfo()}"  />
+                            </div>
+                        </div>
+                    </h:form>
+                </div>
+            </div>
+        </div>
+    </h:body>
+
+</html>

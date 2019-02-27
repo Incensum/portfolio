@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SaveState>
+    <alarms>
+        <alarm>
+            <isActive>false</isActive>
+            <day>12</day>
+            <hour>20</hour>
+            <message>test</message>
+            <minute>30</minute>
+            <month>3</month>
+            <year>2017</year>
+        </alarm>
+        <alarm>
+            <isActive>false</isActive>
+            <day>12</day>
+            <hour>20</hour>
+            <message>test</message>
+            <minute>34</minute>
+            <month>3</month>
+            <year>2017</year>
+        </alarm>
+        <alarm>
+            <isActive>false</isActive>
+            <day>12</day>
+            <hour>22</hour>
+            <message>sdaf</message>
+            <minute>47</minute>
+            <month>3</month>
+            <year>2017</year>
+        </alarm>
+    </alarms>
+</SaveState>

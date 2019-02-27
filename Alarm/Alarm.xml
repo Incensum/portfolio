@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SaveState>
+    <alarms>
+        <alarm>
+            <isActive>false</isActive>
+            <day>12</day>
+            <hour>22</hour>
+            <message>afsdlfk</message>
+            <minute>45</minute>
+            <month>3</month>
+            <year>2017</year>
+        </alarm>
+        <alarm>
+            <isActive>false</isActive>
+            <day>12</day>
+            <hour>23</hour>
+            <message>Alarm</message>
+            <minute>14</minute>
+            <month>4</month>
+            <year>2017</year>
+        </alarm>
+    </alarms>
+</SaveState>
