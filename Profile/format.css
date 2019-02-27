@@ -1,0 +1,92 @@
+body {
+	font-family: Candara, Arial, sans-serif;
+	background-color: lightgray;
+}
+.black {
+    color: black
+}
+#bio {
+    padding: .3em;
+    border: solid;
+    border-color:darkslategray;
+    float: left;
+    margin-right: 1em;
+    background-color:slategray;
+}
+#footer {
+	margin:0;
+	padding:.3em;
+	text-align:center;
+	background-color:slategray;
+	border-top-width:thin;
+	border-bottom-width:thin;
+	border-top-style:inset;
+	border-bottom-style:inset;
+	border-top-color:darkslategray;
+	border-bottom-color:darkslategray;
+	color: #000000;
+}
+#main {
+    margin-bottom: 33em;
+}
+#navlist
+{
+	margin-bottom: 30px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	padding-bottom: 3px;
+	padding-top: 3px;
+	background-color:slategray;
+	border: 1px solid lightslategray;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+	padding-right: 0px;
+}
+#navlist a, #navlist a:link, #navlist a:visited
+{
+	border: 1px outset lightslategray;
+	padding-right: 0.5em;
+    padding-left: 0.5em;
+	color: #000000;
+	font-weight: bold;
+	text-decoration: none;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+#navlist a:hover, #navlist a:active, #navlist a:focus
+{
+	border: 1px outset lightslategray;
+	padding: 1px;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	text-decoration: none;
+    color: darkslategray;
+}
+#navlist li
+{
+	padding-right: 1px;
+	display: inline;
+	font-size: 1em;
+}
+#navlist ul
+{
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+}
+#navlist #active a {
+	background-color: lightgrey;
+}
+#top {
+    background-color: darkslategray;
+    border: thin groove darkslategray;
+}
+#top img {
+    float: left;
+    padding-top: 2em;
+}
+#top h1, #top h3 {
+    text-align: left;
+    margin-left: 100px;
+    color: ghostwhite;
+}
