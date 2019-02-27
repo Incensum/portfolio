@@ -17,4 +17,5 @@ These programs are:
   5) Profile
     - A very basic website design I created to work as a simple "profile page". Made with HTML and CSS. 
   
-  6)
+  6) MEIC_Project3
+    - A program I made myself for a project in a Java course at ISU. The program is supposed to simulate a system for connecting insurance, doctors, and patients. Made entirely in Java.
