@@ -14,4 +14,7 @@ These programs are:
   4) Project353 (LinkedU)
     - A basic website design created for the Web Development course at ISU. The project was designed to test project management skills, and the basic functionalities learned over the span of the course. It was a group effort, and was made using Git, SQL, XML, XHTML, CSS, and JavaScript.
     
-  5) 
+  5) Profile
+    - A very basic website design I created to work as a simple "profile page". Made with HTML and CSS. 
+  
+  6)
